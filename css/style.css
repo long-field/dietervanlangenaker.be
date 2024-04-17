@@ -73,6 +73,12 @@ background-color:  #202122;}
   -o-background-size: cover;
   background-size: cover;
 }
+.carousel-item img{
+  width: auto;
+
+  margin: auto;
+  display: block;
+}
 /*---Change Carousel Transition Speed --*/
 .carousel-item-next, .carousel-item-prev, .carousel-item.active {
   display: block;
