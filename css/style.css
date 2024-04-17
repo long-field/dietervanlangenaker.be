@@ -3,7 +3,7 @@
 body{
   overflow-x: hidden;
   font-family: 'Lato', sans-serif;
-
+  color: #dee2e6;
 }
 .jumbotron{
 background-color:  #202122;}
@@ -65,7 +65,21 @@ background-color:  #202122;}
 }
 /*--slider--*/
 .carousel-item{
-  height:100vh;
+}
+.carousel-item {
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/*---Change Carousel Transition Speed --*/
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+  display: block;
+  transition: -webkit-transform 1.2s ease;
+  transition: transform 1.2s ease;
+  transition: transform 1.2s ease,-webkit-transform 1.2s ease;
+
 }
 .heading{
   background-color: #202122;
