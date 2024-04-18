@@ -175,9 +175,14 @@ footer{
 }
 
 /* BS4 carousel slider */
-.bs-slider{
-  max-height: calc(100vh - 71px);
-  overflow: hidden;
+.carousel {
+    position: relative;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
 

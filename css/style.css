@@ -64,20 +64,35 @@ background-color:  #202122;}
   color:#1ebba3;
 }
 /*--slider--*/
+
+.carousel {
+  position: relative;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
 .carousel-item{
 }
 .carousel-item {
   background: no-repeat center center scroll;
+
+  justify-content: center;
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .carousel-item img{
-  width: auto;
-
-  margin: auto;
-  display: block;
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 /*---Change Carousel Transition Speed --*/
 .carousel-item-next, .carousel-item-prev, .carousel-item.active {
