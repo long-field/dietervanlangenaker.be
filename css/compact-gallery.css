@@ -164,25 +164,12 @@ h2{
   background-size: 10px 10px;
   width: 80%;
 }
-#about-me{
-  padding: 30px;
-}
+
 footer{
   text-align: center;
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   padding-bottom: 20px;
-}
-
-/* BS4 carousel slider */
-.carousel {
-    position: relative;
-}
-
-.carousel-inner {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
 }
 
 
@@ -294,15 +281,6 @@ background: #ddd;
 }
 
 /* ABOUT ME SECTION */
-
-#about-me{
-  font-size: 15px;
-  }
-
-#emailHelp{
-  text-align: center;
-  font-size: 20px;
-}
 
 /* css grid gallery */
 

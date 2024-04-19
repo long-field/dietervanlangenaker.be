@@ -309,10 +309,10 @@ hr.socket{
 /* Contact Form Styling */
 
 .contact-form {
-  width: 50%; /* Adjust width as needed */
+  width: 80%; /* Adjust width as needed */
   margin: 0 auto;
   padding: 2rem;
-  background-color: #202122;
+  background-color: #000000;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }

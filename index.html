@@ -1,514 +1,675 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"/>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/w3.css" />
-    <link rel="stylesheet" type="text/css" href="css/w3-parallax.css" />
-    <link rel="stylesheet" href="css/horizontal.css" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/compact-gallery.css" />
-    <link rel="stylesheet" href="css/output.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/w3.css"/>
+    <link rel="stylesheet" type="text/css" href="css/w3-parallax.css"/>
+    <link rel="stylesheet" href="css/horizontal.css"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+          integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/compact-gallery.css"/>
+    <link rel="stylesheet" href="css/output.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.navbar-nav>li>a').on('click', function () {
+                $('.navbar-collapse').collapse('hide');
+            });
+        });
+    </script>
+
     <title>photography Website | Responsive Theme</title>
-  </head>
-  <body>
-  <!-- Navbar (sit on top) -->
-  <nav class="navbar  navbar-expand-md navbar-dark bg-dark fixed-top">
+</head>
+<body>
+<!-- Navbar (sit on top) -->
+<nav class="navbar  navbar-expand-md navbar-dark bg-dark fixed-top">
     <a class="navbar-brand" href="index.html"><img id="signature" src="img/signaturewhite.png"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-      <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div  class="collapse navbar-collapse"  id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link " href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">Behind the Lens</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#portfolio">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#journey">Journey</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Let's connect</a>
-        </li>
-      </ul>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link " href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">Behind the Lens</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#journey">Journey</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Let's connect</a>
+            </li>
+        </ul>
     </div>
-  </nav>
+</nav>
 
 
-  <!-- Bootstrap 4 carousel slider -->
-  <div id="carouselExampleFade" class="carousel slide" data-ride="carousel" data-interval="2000" >
+<!-- Bootstrap 4 carousel slider -->
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" data-interval="600">
     <div class="carousel-inner">
-      <div class="carousel-item center-block img  h-screen active">
-        <img class=" bs-slider  img " src="img/1.png" alt="Lake and dock for fishing" height="">
-      </div>
-      <div class="carousel-item carousel-item img  h-screen">
-        <img class=" bs-slider d-block w-auto h-100" src="img/FA1.jpeg" alt="forrest and moss" height="">
-      </div>
-      <div class="carousel-item center-block img  h-screen">
-        <img class=" bs-slider h-100  w-auto d-block   " src="img/MO4.jpg" alt="water picture">
-      </div>
-      <div class="carousel-item center-block img  h-screen">
-        <img class=" bs-slider d-block w-auto h-100" src="img/NOVA-CANON-2.jpg" alt="roaring lion">
-      </div>
-      <div class="carousel-item center-block img  h-screen">
-        <img class=" bs-slider d-block w-auto h-100" src="img/sl3.jpg" alt="astronaut in space">
-      </div>
-      <div class="carousel-item center-block img  h-screen">
-        <img class=" bs-slider d-block w-auto h-100" src="img/ST6.jpg" alt="Nature">
-      </div>
-      <div class="carousel-item center-block img  h-screen">
-        <img class=" bs-slider d-block w-auto h-100"src="img/FA4.jpg" alt="nature">
-      </div>
-      <div class="carousel-item center-block img  h-screen">
-        <img class=" bs-slider d-block w-auto h-100" src="img/NOVA-36.jpg" alt="tree and nature">
-      </div>
+        <div class="carousel-item center-block img  h-screen active " data-interval="1300">
+            <img class=" bs-slider  img " src="images/logo.png" alt="logo" height="">
+        </div>
+        <div class="carousel-item carousel-item img  h-screen">
+            <img class=" bs-slider d-block w-auto h-100" src="images/web-167.jpg" alt="portfolio" height="">
+        </div>
+        <div class="carousel-item center-block img  h-screen">
+            <img class=" bs-slider d-block w-auto h-100" src="images/web-427.jpg" alt="portfolio">
+        </div>
+        <div class="carousel-item center-block img  h-screen">
+            <img class=" bs-slider h-100  w-auto d-block   " src="images/web even more higher-25.jpg" alt="portfolio">
+        </div>
+        <div class="carousel-item center-block img  h-screen">
+            <img class=" bs-slider d-block w-auto h-100" src="images/web-408.jpg" alt="portfolio">
+        </div>
+        <div class="carousel-item center-block img  h-screen">
+            <img class=" bs-slider d-block w-auto h-100" src="images/web-63.jpg" alt="portfolio">
+        </div>
+        <div class="carousel-item center-block img  h-screen">
+            <img class=" bs-slider d-block w-auto h-100" src="images/web-311.jpg" alt="portfolio">
+        </div>
+        <div class="carousel-item center-block img  h-screen">
+            <img class=" bs-slider d-block w-auto h-100" src="images/web-423.jpg" alt="portfolio">
+        </div>
+        <div class="carousel-item center-block img  h-screen">
+            <img class=" bs-slider d-block w-auto h-100" src="images/web higher-156.jpg" alt="portfolio">
+        </div>
+        <div class="carousel-item center-block img  h-screen">
+            <img class=" bs-slider d-block w-auto h-100" src="images/web web-1.jpg" alt="portfolio">
+        </div>
+        <div class="carousel-item center-block img  h-screen">
+            <img class=" bs-slider d-block w-auto h-100" src="images/web-87.jpg" alt="portfolio">
+        </div>
+        <div class="carousel-item center-block img  h-screen">
+            <img class=" bs-slider d-block w-auto h-100" src="images/web-84.jpg" alt="portfolio">
+        </div>
+        <div class="carousel-item center-block img  h-screen">
+            <img class=" bs-slider d-block w-auto h-100" src="images/web%20even%20more%20higher-26.jpg" alt="portfolio">
+        </div>
+        <div class="carousel-item center-block img  h-screen">
+            <img class=" bs-slider d-block w-auto h-100" src="images/web higher-83.jpg" alt="portfolio">
+        </div>
+        <div class="carousel-item center-block img  h-screen">
+            <img class=" bs-slider d-block w-auto h-100" src="images/web-423.jpg" alt="portfolio">
+        </div>
+
     </div>
+    <!--
     <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
     </a>
     <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
     </a>
-  </div>
-  <br>
-  <div class="bgimg-4 w3-display-container w3-opacity-min" id="about">
+    -->
+</div>
+<br>
+<!--Paralax 1-->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="about">
     <div class="w3-display-middle" style="white-space:nowrap;">
-      <span class="w3-xxlarge w3-text-black w3-wide w3-animate-opacity" style="background-color: rgba(255, 255, 255, 0.5); padding: 2px;">About</span>
+        <span class="w3-xxlarge w3-text-black w3-wide w3-animate-opacity"
+              style="background-color: rgba(255, 255, 255, 0.5); padding: 2px;">About</span>
     </div>
-  </div>
-    <!-- Container (About Section) -->
-    <div class="w3-content w3-container w3-padding-64" >
-      <div class="w3-row">
-        <div class="w3-col m6 w3-center w3-padding-large">
-          <div
-                  class="hidden md:block bg-white  p-5 pb-28 m-6 md:m-12 shadow-lg   hover:rotate-0 transition duration-500 -rotate-6 ">
-            <img src="./img/nature.jpg" alt=""
-                 class="smooth-edges flex flex-col w-full aspect-square object-cover h-auto" />
-            <div class="absolute bottom-0 left-0 right-0 text-center">
+</div>
 
-              <br>
-              <p class="text-black   ">Dieter</p>
+<!-- Container (About Section) -->
+<div class=" w3-container w3-padding-64">
+    <div class="w3-row w3-hide-large">
+        <div class="w3-col w3-padding-large m12">
+            <h4>
+                <br>
+                Hey!
+
+                Ik ben een gepassioneerde fotograaf die de wereld verkent en bij elke stap momenten vastlegt die het
+                leven kleur geven. Van het verkennen van verre oorden tot het ontdekken van verborgen pareltjes dichter
+                bij huis, mijn camera is altijd bij de hand om die speciale momenten vast te leggen.
+
+            </h4>
+        </div>
+    </div>
+    <div class="w3-row w3-hide-small w3-hide-medium">
+        <div class="w3-col m2 w3-center w3-padding-large w3-hide-medium  "></div>
+        <div class="w3-col m3 w3-center w3-padding-large ">
+            <div class=" w3-hide-small w3-hide-medium bg-white p-3 md:p-5 mx-7 md:mx-6 my-2 md:my-6 shadow-lg hover:rotate-0 transition duration-500 -rotate-6">
+                <img src="./img/oldpicture.png" alt=""
+                     class="smooth-edges flex flex-col w-full aspect-square object-cover h-auto"/>
+                <div class="absolute bottom-0 left-0 right-0 text-center">
+
+                    <br>
+                    <p class="text-black   ">Dieter</p>
+                </div>
             </div>
-          </div>
+        </div>
+        <div class="w3-col w3-padding-large m1"></div>
+        <!-- Hide this text on small devices -->
+        <div class="w3-col w3-padding-large m4">
+            <h4>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                Hey!
+
+                Ik ben een gepassioneerde fotograaf die de wereld verkent en bij elke stap momenten vastlegt die het
+                leven kleur geven. Van het verkennen van verre oorden tot het ontdekken van verborgen pareltjes dichter
+                bij huis, mijn camera is altijd bij de hand om die speciale momenten vast te leggen.
+
+            </h4>
+        </div>
+    </div>
+    <div class="w3-row w3-hide-small w3-hide-medium">
+        <div class="w3-col m2 w3-center w3-padding-large"></div>
+
+
+        <!-- Hide this text on small devices -->
+
+        <!-- Hide this text on small devices -->
+        <div class="w3-col w3-padding-large m4">
+            <h4>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                Thuis vind ik mijn grootste geluk bij mijn vrouw en kleine dochter. Familie is alles voor me, en ik
+                koester ook de oude foto's van onze voorouders die ons verhaal vertellen.
+
+            </h4>
+        </div>
+        <div class="w3-col m3 w3-center w3-padding-large w3-hide-small">
+            <div class=" hidden-mobile bg-white p-3 md:p-5 mx-7 md:mx-6 my-2 md:my-6 shadow-lg hover:rotate-0 transition duration-500 rotate-6">
+                <img src="./img/oldpicture.png" alt=""
+                     class="smooth-edges flex flex-col w-full aspect-square object-cover h-auto"/>
+                <div class="absolute bottom-0 left-0 right-0 text-center">
+
+                    <br>
+                    <p class="text-black   ">Dieter</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row w3-hide-small w3-hide-medium">
+        <div class="w3-col m2 w3-center w3-padding-large"></div>
+        <div class="w3-col m3 w3-center w3-padding-large">
+            <div class=" hidden-mobile bg-white p-3 md:p-5 mx-7 md:mx-6 my-2 md:my-6 shadow-lg hover:rotate-0 transition duration-500 -rotate-6">
+                <img src="./img/oldpicture.png" alt=""
+                     class="smooth-edges flex flex-col w-full aspect-square object-cover h-auto"/>
+                <div class="absolute bottom-0 left-0 right-0 text-center">
+
+                    <br>
+                    <p class="text-black   ">Dieter</p>
+                </div>
+            </div>
         </div>
 
         <!-- Hide this text on small devices -->
-        <div class="w3-col m6  w3-padding-large">
-          <p>
-            Hey!
+        <div class="w3-col w3-padding-large m1"></div>
+        <!-- Hide this text on small devices -->
+        <div class="w3-col w3-padding-large m4">
+            <h4>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                Mijn stijl is eenvoudig: ik leg echte momenten vast, waarbij ik soms bewust kies voor spontaniteit. Maar
+                elk beeld draagt de authentieke emotie van het moment.
 
-            Ik ben een gepassioneerde fotograaf die de wereld verkent en bij elke stap momenten vastlegt die het leven kleur geven. Van het verkennen van verre oorden tot het ontdekken van verborgen pareltjes dichter bij huis, mijn camera is altijd bij de hand om die speciale momenten vast te leggen.
-
-            Thuis vind ik mijn grootste geluk bij mijn vrouw en kleine dochter. Familie is alles voor me, en ik koester ook de oude foto's van onze voorouders die ons verhaal vertellen.
-
-            Mijn stijl is eenvoudig: ik leg echte momenten vast, waarbij ik soms bewust kies voor spontaniteit. Maar elk beeld draagt de authentieke emotie van het moment.
-
-            Welkom in mijn fotografiewereld. Neem een kijkje en laat me weten welke momenten jou raken.
-
-            Bedankt voor je bezoek!
-          </p>
+                Welkom in mijn fotografiewereld. Neem een kijkje en laat me weten welke momenten jou raken.
+            </h4>
         </div>
-      </div>
-
     </div>
+</div>
 
-  <!-- First Parallax Image with Logo Text -->
-  <div class="bgimg-1 w3-display-container w3-opacity-min" id="portfolio">
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min" id="portfolio">
     <div class="w3-display-middle" style="white-space:nowrap;">
-      <span class="w3-xxlarge w3-text-black w3-wide">PORTFOLIO</span>
+        <span class="w3-xxlarge w3-text-black w3-wide w3-animate-opacity"
+              style="background-color: rgba(255, 255, 255, 0.5); padding: 2px;">PORTFOLIO</span>
     </div>
-  </div>
+</div>
 
-  <!-- Container (Portfolio Section) -->
-  <div class="w3-content w3-container w3-padding-64" >
+<!-- Container (Portfolio Section) -->
+<div class=" w3-container w3-padding-64">
+    <div class="w3-row">
+        <div class="w3-col m2 w3-center w3-padding-large w3-hide-medium  "></div>
+        <div class="w3-col w3-padding-large m8">
+            <h4>
 
-    <p class="w3-center">
-      <em
-      >Ontdek een verzameling van hartverwarmende portretten die de essentie van familiebanden en belangrijke mijlpalen vangen. In mijn portfolio vind je een selectie van foto's die momenten van vreugde, verwachting en verbondenheid vastleggen, van communies en vormsels tot in verwachting zijn en meer.
+                Ontdek een verzameling van hartverwarmende portretten die de essentie van familiebanden en belangrijke
+                mijlpalen vangen. Elk beeld vertelt een uniek verhaal en legt de kostbare banden vast die families zo
+                bijzonder maken.
+                Van vreugdevolle communie- en vormselvieringen tot intieme zwangerschapsshoots, ik leg de emoties en
+                schoonheid vast van deze bijzondere gebeurtenissen.
 
-        Laat je betoveren door de liefde en samenhorigheid die straalt van mijn portretten. Elk beeld vertelt een uniek verhaal en legt de kostbare banden vast die families zo bijzonder maken.
-
-        Herbeleef belangrijke mijlpalen in het leven door middel van mijn fotografie. Van vreugdevolle communie- en vormselvieringen tot intieme zwangerschapsshoots, ik leg de emoties en schoonheid vast van deze bijzondere gebeurtenissen.
-
-        <br />
-      </em
-      >
-    </p>
-    <br />
-
-    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-    <div class="w3-row-padding w3-center">
-      <div class="w3-col m3">
-        <img
-                src="img/city-1.jpg"
-                style="width:100%"
-                onclick="onClick(this)"
-                class="w3-text-white w3-hover-opacity"
-                alt="NYC Photos"
-        />
-      </div>
-
-      <div class="w3-col m3">
-        <img
-                src="img/city-2.jpg"
-                style="width:100%"
-                onclick="onClick(this)"
-                class="w3-hover-opacity"
-                alt="NYC Photos"
-        />
-      </div>
-
-      <div class="w3-col m3">
-        <img
-                src="img/city-3.jpg"
-                style="width:100%"
-                onclick="onClick(this)"
-                class="w3-hover-opacity"
-                alt="NYC Photos"
-        />
-      </div>
-
-      <div class="w3-col m3">
-        <img
-                src="img/city-4.jpg"
-                style="width:100%"
-                onclick="onClick(this)"
-                class="w3-hover-opacity"
-                alt="NYC Photos"
-        />
-      </div>
-    </div>
-
-    <div class="w3-row-padding w3-center w3-section">
-      <div class="w3-col m3">
-        <img
-                src="img/city-5.jpg"
-                style="width:100%"
-                onclick="onClick(this)"
-                class="w3-hover-opacity"
-                alt="NYC Photos"
-        />
-      </div>
-
-      <div class="w3-col m3">
-        <img
-                src="img/liberty-statue.jpg"
-                style="width:100%"
-                onclick="onClick(this)"
-                class="w3-hover-opacity w3-text-white"
-                alt="NYC Photos"
-        />
-      </div>
-
-      <div class="w3-col m3">
-        <img
-                src="img/cityscape-roads.jpg"
-                style="width:100%"
-                onclick="onClick(this)"
-                class="w3-hover-opacity"
-                alt="NYC Photos"
-        />
-      </div>
-      <div class="w3-col m3">
-        <img
-                src="img/bridge-brooklyn.jpg"
-                style="width:100%"
-                onclick="onClick(this)"
-                class="w3-hover-opacity"
-                alt="NYC Photos"
-        />
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-      <span class="w3-button w3-display-topright" title="Close Modal Image"
-      ><i class="fas fa-times"></i
-      ></span>
-    <div
-            class="w3-modal-content w3-animate-opacity w3-center w3-transparent "
-    >
-      <img id="img01" class="w3-image" />
-      <p id="caption" class="w3-opacity w3-large"></p>
-    </div>
-  </div>
+                <br/>
 
 
-      <!-- Second Parallax Image with Portfolio Text -->
-      <div class="bgimg-2 w3-display-container w3-opacity-min" id="journey">
-        <div class="w3-display-middle">
-          <span class="w3-xxlarge w3-text-black w3-wide">JOURNEY</span>
+            </h4>
+            <br/>
+
         </div>
-      </div>
     </div>
 
-  <!-- Container (Portfolio Section) -->
-  <div class="w3-content w3-container w3-padding-64" >
+    <!-- COMPACT EASE IN-OUT GALLERY -->
 
-    <p class="w3-center">
-      <em
-      >Ga mee op een visuele reis door mijn lens terwijl ik de wereld verken door portretten, straatbeelden en de wonderen van mijn avonturen. Ik nodig je uit om met mij mee te gaan op een boeiend avontuur, waar elke foto een verhaal vertelt en elke klik een moment vastlegt dat bevroren is in de tijd.
+    <section class="gallery-block compact-gallery">
+        <div class="container">
+            <div class="heading">
 
-        Ontdek Portretten
-
-        Dwaal door de Straten
-
-        Ervaar het ritme van het leven dat door bruisende straten en stille hoekjes pulseert. Met een scherp oog voor detail en een passie voor het onverwachte documenteer ik de schoonheid van het alledaagse leven in zijn rauwe en ongefilterde vorm.
-<br />
-      </em
-      >
-    </p>
-    <br />
-
-    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-    <div class="w3-row-padding w3-center">
-      <div class="w3-col m3">
-        <img
-                src="img/city-1.jpg"
-                style="width:100%"
-                onclick="onClick(this)"
-                class="w3-text-white w3-hover-opacity"
-                alt="NYC Photos"
-        />
-      </div>
-
-      <div class="w3-col m3">
-        <img
-                src="img/city-2.jpg"
-                style="width:100%"
-                onclick="onClick(this)"
-                class="w3-hover-opacity"
-                alt="NYC Photos"
-        />
-      </div>
-
-      <div class="w3-col m3">
-        <img
-                src="img/city-3.jpg"
-                style="width:100%"
-                onclick="onClick(this)"
-                class="w3-hover-opacity"
-                alt="NYC Photos"
-        />
-      </div>
-
-      <div class="w3-col m3">
-        <img
-                src="img/city-4.jpg"
-                style="width:100%"
-                onclick="onClick(this)"
-                class="w3-hover-opacity"
-                alt="NYC Photos"
-        />
-      </div>
-    </div>
-
-    <div class="w3-row-padding w3-center w3-section">
-      <div class="w3-col m3">
-        <img
-                src="img/city-5.jpg"
-                style="width:100%"
-                onclick="onClick(this)"
-                class="w3-hover-opacity"
-                alt="NYC Photos"
-        />
-      </div>
-
-      <div class="w3-col m3">
-        <img
-                src="img/liberty-statue.jpg"
-                style="width:100%"
-                onclick="onClick(this)"
-                class="w3-hover-opacity w3-text-white"
-                alt="NYC Photos"
-        />
-      </div>
-
-      <div class="w3-col m3">
-        <img
-                src="img/cityscape-roads.jpg"
-                style="width:100%"
-                onclick="onClick(this)"
-                class="w3-hover-opacity"
-                alt="NYC Photos"
-        />
-      </div>
-      <div class="w3-col m3">
-        <img
-                src="img/bridge-brooklyn.jpg"
-                style="width:100%"
-                onclick="onClick(this)"
-                class="w3-hover-opacity"
-                alt="NYC Photos"
-        />
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-      <span class="w3-button w3-display-topright" title="Close Modal Image"
-      ><i class="fas fa-times"></i
-      ></span>
-    <div
-            class="w3-modal-content w3-animate-opacity w3-center w3-transparent "
-    >
-      <img id="img01" class="w3-image" />
-      <p id="caption" class="w3-opacity w3-large"></p>
-    </div>
-  </div>
-
-    <!-- Third Parallax Image with Portfolio Text -->
-    <div class="bgimg-3 w3-display-container w3-opacity-min " id="contact">
-      <div class="w3-display-middle">
-        <span class="w3-xxlarge w3-text-black w3-wide">CONTACT</span>
-      </div>
-    </div>
-
-
-      <!-- Container (Contact Section) -->
-    <div class="w3-content w3-container w3-padding-64" >
-      <h3 class="w3-center">Let's connect!</h3>
-
-      <div class="w3-row w3-padding-32 w3-section">
-        <div class="w3-col m4 w3-container">
-          <img
-            src="img/cityscape-roads.jpg"
-            alt="Nyc cityscape view on water"
-            class="w3-image w3-round"
-            style="width:100%"
-          />
-        </div>
-        <div class="w3-col m8 w3-panel">
-          <div class="w3-large w3-margin-bottom">
-            <i
-              class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
-            ></i>
-            New York City, New York, USA<br />
-            <i
-              class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
-            ></i>
-            Phone: 123-456-7890<br />
-            <i
-              class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
-            ></i>
-            jane-doe@mail.com<br />
-          </div>
-          <p>
-            Do you need a photographer? <i class="fas fa-camera-retro"></i>
-            <br />
-            Leave me a message below:
-          </p>
-          <form action="#home">
-            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-              <div class="w3-half">
-                <input
-                  class="w3-input w3-border"
-                  type="text"
-                  placeholder="Name"
-                  required
-                  name="Name"
-                />
-              </div>
-              <div class="w3-half">
-                <input
-                  class="w3-input w3-border"
-                  type="text"
-                  placeholder="Email"
-                  required
-                  name="Email"
-                />
-              </div>
             </div>
-            <input
-              class="w3-input w3-border"
-              type="text"
-              placeholder="Message"
-              required
-              name="Message"
-            />
-            <button class="w3-button w3-grey w3-right w3-section" type="submit">
-              <i class="fa fa-paper-plane"></i> SEND MESSAGE
-            </button>
-          </form>
+            <div class="row g-3 ">
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/dock.jpg" onclick="onClick(this)" alt="">
+
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/natur.jpg" onclick="onClick(this)" alt="">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/guy.jpg" onclick="onClick(this)" alt="">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/nature.jpg" onclick="onClick(this)" alt="">
+
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/lion.jpg" onclick="onClick(this)" alt="">
+
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/spance.jpg" onclick="onClick(this)" alt="">
+
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/forest.jpg" onclick="onClick(this)" alt="">
+
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/tree.jpg" onclick="onClick(this)" alt="">
+
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/water.jpg" onclick="onClick(this)" alt="">
+
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/water.jpg" onclick="onClick(this)" alt="">
+
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/water.jpg" onclick="onClick(this)" alt="">
+
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/water.jpg" onclick="onClick(this)" alt="">
+
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/water.jpg" onclick="onClick(this)" alt="">
+
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/water.jpg" onclick="onClick(this)" alt="">
+
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/water.jpg" onclick="onClick(this)" alt="">
+
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/water.jpg" onclick="onClick(this)" alt="">
+
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/water.jpg" onclick="onClick(this)" alt="">
+
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/water.jpg" onclick="onClick(this)" alt="">
+
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
+</div>
+
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min" id="journey">
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-black w3-wide w3-animate-opacity"
+              style="background-color: rgba(255, 255, 255, 0.5); padding: 2px;">JOURNEY</span>
+    </div>
+</div>
+
+
+<!-- Container (Portfolio Section) -->
+<div class=" w3-container w3-padding-64">
+    <div class="w3-row">
+        <div class="w3-col m2 w3-center w3-padding-large w3-hide-medium  "></div>
+        <div class="w3-col w3-padding-large m8">
+            <h4>
+
+                Ontdek een verzameling van hartverwarmende portretten die de essentie van familiebanden en belangrijke
+                mijlpalen vangen. Elk beeld vertelt een uniek verhaal en legt de kostbare banden vast die families zo
+                bijzonder maken.
+                Van vreugdevolle communie- en vormselvieringen tot intieme zwangerschapsshoots, ik leg de emoties en
+                schoonheid vast van deze bijzondere gebeurtenissen.
+
+                <br/>
+
+
+            </h4>
+            <br/>
+
+        </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="w3-center">
+    <!-- COMPACT EASE IN-OUT GALLERY -->
 
-      <div class="w3-xlarge w3-section">
-        <i id="icon-padding" class="fab fa-facebook-f w3-text-blue w3-hover-opacity "></i>
-        <i id="icon-padding" class="fab fa-instagram w3-text-red w3-hover-opacity"></i>
-      </div>
+    <section class="gallery-block compact-gallery">
+        <div class="container">
+            <div class="heading">
 
-    </footer>
+            </div>
+            <div class="row g-3 ">
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/dock.jpg" onclick="onClick(this)" alt="">
 
-    <script>
-      // Modal Image Gallery
-      function onClick(element) {
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/natur.jpg" onclick="onClick(this)" alt="">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/guy.jpg" onclick="onClick(this)" alt="">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/nature.jpg" onclick="onClick(this)" alt="">
+
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/lion.jpg" onclick="onClick(this)" alt="">
+
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/spance.jpg" onclick="onClick(this)" alt="">
+
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/forest.jpg" onclick="onClick(this)" alt="">
+
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/tree.jpg" onclick="onClick(this)" alt="">
+
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/water.jpg" onclick="onClick(this)" alt="">
+
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/water.jpg" onclick="onClick(this)" alt="">
+
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/water.jpg" onclick="onClick(this)" alt="">
+
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/water.jpg" onclick="onClick(this)" alt="">
+
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/water.jpg" onclick="onClick(this)" alt="">
+
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/water.jpg" onclick="onClick(this)" alt="">
+
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/water.jpg" onclick="onClick(this)" alt="">
+
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/water.jpg" onclick="onClick(this)" alt="">
+
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/water.jpg" onclick="onClick(this)" alt="">
+
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item zoom-on-hover mb-3">
+                    <a class="lightbox">
+                        <img class="img-fluid image" src="img/water.jpg" onclick="onClick(this)" alt="">
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+      <span class="w3-button w3-display" title="Close Modal Image"
+      ><i class="fas fa-times"></i
+      ></span>
+    <div
+            class="w3-modal-content w3-animate-opacity w3-center w3-transparent "
+    >
+        <img id="img01" class="w3-image"/>
+        <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-4 w3-display-container w3-opacity-min " id="contact">
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-black w3-wide w3-animate-opacity"
+              style="background-color: rgba(255, 255, 255, 0.5); padding: 2px;">CONTACT</span>
+    </div>
+</div>
+
+
+<!-- Container (Contact Section) -->
+<div class="w3-content  w3-padding-64">
+
+    <div class="w3-row w3-padding-32 w3-section">
+
+        <div class="w3-col m3 w3-container">
+            <div class=" w3-hide-small w3-hide-medium">
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+            </div>
+            <div class=" w3-hide-small w3-hide-medium bg-white p-2 md:p-5 mx-7 md:mx-6 my-2 md:my-6 shadow-lg hover:rotate-0 transition duration-500 -rotate-6">
+                <img src="./img/nature.jpg" alt=""
+                     class="smooth-edges h-full w-full aspect-square "/>
+                <div class="absolute bottom-0 left-0 right-0 text-center">
+
+                    <br>
+                    <p class="text-black   ">Dieter</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-col m9 w3-panel">
+            <div class="w3-large w3-margin-bottom">
+
+                <div class="contact-form">
+                    <h3>Fotograaf nodig?</h3>
+                    <br/>
+                    <h3>Schrijf je naam, email en korte uitleg en de datum je me wenst te boeken. En ik neem snel
+                        contact met je op.</h3>
+                    <form method="post" action="http://www.dietervanlangenaker.be/cgi-bin/FormMail.pl"
+                          accept-charset="ISO-8859-1"
+                          onsubmit="var originalCharset = document.charset;
+                          document.charset = 'ISO-8859-1';
+                          window.onbeforeunload = function () {document.charset=originalCharset;};">
+                        Name
+                        <br/>
+                        <input name="realname"/>
+                        <br/>
+                        Email
+                        <br/>
+                        <input name="email"/>
+                        <br/>
+                        Message
+                        <br/>
+                        <textarea cols="40" rows="10" name="Message"></textarea>
+                        <br/>
+                        <input type="submit" value="Send"/>
+                        <input type="hidden" name="recipient" value="contact@dietervanlangenaker.be"/>
+                        <input type="hidden" name="subject" value="Subject"/>
+                        <input type="hidden" name="redirect"
+                               value="http://www.dietervanlangenaker.be/thanks.html"/>
+                        <input type="hidden" name="missing_fields_redirect"
+                               value="http://www.dietervanlangenaker.be/error.html"/>
+                        <input type="hidden" name="required" value="realname,email,Message"/>
+                    </form>
+                </div>
+              <br>
+              <i
+                      class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
+              ></i>
+              Sint-truiden, België<br/>
+              <i
+                      class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
+              ></i>
+              0496 37 47 35<br/>
+              <i
+                      class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
+              ></i>
+              contact@dietervanlangenaker.be<br/>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center">
+
+    <div class="w3-xlarge w3-section">
+        <i id="icon-padding" class="fab fa-facebook-f  w3-hover-opacity "></i>
+      <a href="https://www.instagram.com/long.field_/" target="_blank"><i class="fab fa-instagram w3-hover-opacity "></i></a>
+    </div>
+
+</footer>
+
+<script>
+    // Modal Image Gallery
+    function onClick(element) {
         document.getElementById("img01").src = element.src;
         document.getElementById("modal01").style.display = "block";
         let captionText = document.getElementById("caption");
         captionText.innerHTML = element.alt;
-      }
+    }
 
-      // Change style of navbar on scroll
-      window.onscroll = function() {
-        myFunction();
-      };
-      function myFunction() {
-        let navbar = document.getElementById("myNavbar");
-        if (
-          document.body.scrollTop > 100 ||
-          document.documentElement.scrollTop > 100
-        ) {
-          navbar.className =
-            "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-        } else {
-          navbar.className = navbar.className.replace(
-            " w3-card w3-animate-top w3-white",
-            ""
-          );
-        }
-      }
+    // Change style of navbar on scroll
 
-      // Used to toggle the menu on small screens when clicking on the menu button
-      function toggleFunction() {
-        let x = document.getElementById("navDemo");
-        if (x.className.indexOf("w3-show") == -1) {
-          x.className += " w3-show";
-        } else {
-          x.className = x.className.replace(" w3-show", "");
-        }
-      }
-    </script>
-  <!-- BS4 JQUERY AND POPPER.js CDN's -->
+</script>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-          crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-          crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-          crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
-  </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+</body>
 </html>

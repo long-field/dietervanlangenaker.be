@@ -1,4 +1,4 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Raleway', sans-serif;}
 body, html {
   height: 100%;
   color: rgb(255, 255, 255);
@@ -14,33 +14,45 @@ body, html {
   background-size: cover;
 }
 
-/* First image (Logo. Full height) */
+/* First image (About) */
 .bgimg-1 {
-  background-image: url('/img/FA11.jpeg');
-  min-height: 400px;
+  background-image: url('/images/web even more higherderder-1-2.jpg');
+  min-height: 250px;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-  background-image: url("/img/ST12.jpeg");
-  min-height: 400px;
+  background-image: url("/images/web-63.jpg");
+  min-height: 250px;
 }
+/* Third image (Journey) */
+.bgimg-3 {
+  background-image: url("/images/web even more higher-1.jpg");
+  min-height: 250px;
+}
+
+/* 4th image (Contact) */
+.bgimg-4 {
+  background-image: url("/images/web web-1-2.jpg");
+  min-height: 250px;
+}
+
 /* background transparent color for text logo text  */
 #city-life{
 background-color: rgba(7, 7, 19, 0.658) !important;
 
 }
 
-/* Third image (Contact) */
+/* Third image (Journey) */
 .bgimg-3 {
-  background-image: url("/img/ST4.jpeg");
-  min-height: 400px;
+  background-image: url("/images/web even more higher-1.jpg");
+  min-height: 250px;
 }
 
 /* 4th image (Contact) */
 .bgimg-4 {
-  background-image: url("/img/aboutme.jpg");
-  min-height: 400px;
+  background-image: url("/images/web web-1-2.jpg");
+  min-height: 250px;
 }
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
@@ -50,15 +62,15 @@ background-color: rgba(7, 7, 19, 0.658) !important;
 }
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4{
     background-attachment: scroll;
-    min-height: 400px;
+    min-height: 100px;
   }
 }
 /* custom scrollbar */
  /* width */
  ::-webkit-scrollbar {
-  width: 13px;
+  width: 0px;
 }
 
 /* Track */
