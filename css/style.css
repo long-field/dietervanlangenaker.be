@@ -364,7 +364,43 @@ hr.socket{
 }
 
 
+@media (max-width: 767px) {
+  .portfolio img:hover {
+    transform: none; /* Remove the scaling effect on smaller screens */
+    background-color: transparent; /* Remove the background color change on hover */
+  }
+}
 
+@media (max-width: 576px) {
+  .gallery-block.compact-gallery .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .gallery-block.compact-gallery .item {
+    width: 90%; /* Set each item to occupy 90% of the container width */
+    margin-bottom: 20px; /* Add some spacing between items */
+  }
+}
+
+@media (min-width: 576px) {
+  .gallery-block.compact-gallery .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .gallery-block.compact-gallery .item {
+    width: calc(33.3333% - 20px); /* Set each item to occupy one-third of the container width with spacing */
+  }
+}
+@media (max-width: 767px) {
+  .gallery-block.compact-gallery .item {
+    flex: 0 0 100%; /* Set each item to take up full width on mobile */
+    margin: 10px 0; /* Adjust margin to create space between items */
+  }
+}
 /*============ BOOTSTRAP BREAK POINTS:
 
 Extra small (xs) devices (portrait phones, less than 576px)
