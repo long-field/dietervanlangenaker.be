@@ -7,9 +7,15 @@ body, html {
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+.bgimg-2, .bgimg-3, .bgimg-4 {
   background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg-1  {
+  background-attachment: fixed;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -18,6 +24,7 @@ body, html {
 .bgimg-1 {
   background-image: url('/images/web even more higherderder-1-2.jpg');
   min-height: 250px;
+
 }
 
 /* Second image (Portfolio) */
@@ -67,6 +74,11 @@ background-color: rgba(7, 7, 19, 0.658) !important;
     min-height: 100px;
   }
 }
+@media only screen and (max-device-width: 1600px) {
+  .w3-xxlarge {
+    font-size: 18px!important; /* Adjust the font size for smaller screens */
+  }
+}
 /* custom scrollbar */
  /* width */
  ::-webkit-scrollbar {
@@ -89,3 +101,4 @@ background-color: rgba(7, 7, 19, 0.658) !important;
 ::-webkit-scrollbar-thumb:hover {
   background: #000000;
 }
+
